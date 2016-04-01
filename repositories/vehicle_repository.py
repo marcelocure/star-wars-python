@@ -1,7 +1,7 @@
 from base_repository import get
 
-endpoint_name = 'people'
+endpoint_name = 'vehicles'
 
 
-def get_person(id):
+def get_vehicle(id):
     return get(endpoint_name, id)
