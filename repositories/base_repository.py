@@ -13,7 +13,7 @@ def post(endpoint, payload):
 
 def get_all(endpoint):
     response = requests.get('{0}/{1}'.format(base_url, endpoint))
-    return json.loads(json.dumps(response.json()))
+    return json.loads(json.dumps(response.json()))['results']
 
 
 def get(endpoint, id):
